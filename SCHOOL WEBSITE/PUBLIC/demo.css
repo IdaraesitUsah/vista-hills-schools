@@ -33,7 +33,7 @@
   --sec-gold:       #c9a227;
 
   /* Overlays - these genuinely need transparency so rgba stays here only */
-  --overlay-navy:   rgba(0, 43, 92, 0.65);
+  --overlay-navy:   #1a3a8b;
   --overlay-maroon: #8b0000;
   --overlay-blue:   #1a3a8b;
 }
