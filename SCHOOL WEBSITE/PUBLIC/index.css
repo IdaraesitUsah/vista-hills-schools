@@ -905,6 +905,50 @@ span.hero-text{
   }
 }
 
+/* Calendar link fallback */
+.calendar-link-fallback {
+  text-align: center;
+  padding: 60px 30px;
+  background: var(--white);
+  border-radius: 12px;
+}
+
+.calendar-link-icon {
+  font-size: 4em;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.calendar-link-fallback h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--sec-dominant);
+  margin-bottom: 12px;
+}
+
+.calendar-link-fallback p {
+  font-size: 0.95em;
+  color: var(--text-mid);
+  max-width: 500px;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.calendar-open-btn {
+  display: inline-block;
+  background: var(--sec-dominant);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1em;
+  padding: 14px 36px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.calendar-open-btn:hover {
+  background: #0f2460;
+  transform: translateY(-2px);
+}
 
 /* =============================================
    CURRICULUM PAGE
@@ -1179,6 +1223,69 @@ span.hero-text{
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+}
+
+
+/* =============================================
+   STAFF - LEADERSHIP VS TEACHERS LAYOUT
+   ============================================= */
+
+/* Leadership - 2 columns centered */
+.leadership-gallery {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* Teachers title spacing */
+.teachers-title {
+  margin-top: 10px;
+}
+
+/* Teachers - 5 columns on desktop */
+.teachers-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Slightly smaller cards for the teachers grid */
+.teachers-gallery .staff-card {
+  flex: unset;
+  width: 100%;
+  padding: 20px 14px;
+}
+
+.teachers-gallery .staff-img-container {
+  width: 110px;
+  height: 110px;
+}
+
+.teachers-gallery .staff-name {
+  font-size: 0.92em;
+}
+
+.teachers-gallery .staff-role {
+  font-size: 0.78em;
+}
+
+/* =============================================
+   TEACHERS RESPONSIVE
+   ============================================= */
+@media (max-width: 1024px) {
+  .teachers-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .teachers-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .teachers-gallery .staff-img-container {
+    width: 90px;
+    height: 90px;
   }
 }
 
